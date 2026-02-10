@@ -70,10 +70,7 @@ function App() {
 
   return (
     <div className="h-screen flex flex-row overflow-hidden">
-      <div className={`h-screen transition-all duration-300 ease-in-out flex-shrink-0 ${isSidebarOpen ? 'lg:w-2/9 md:w-2/5 sm:w-3/5 w-full' : 'w-[60px]'}`}>
-        {!isSidebarOpen && <Hamburger trigger={() => setIsSidebarOpen(true)} />}
-        {isSidebarOpen && <Sidebar isOpen={isSidebarOpen} onClose={() => setIsSidebarOpen(false)} onOpenSettings={openSettings} onOpenAuth={openAuth} />}
-      </div>
+      <Sidebar isOpen={isSidebarOpen} onClose={() => setIsSidebarOpen(false)} onOpen={() => setIsSidebarOpen(true)} onOpenSettings={openSettings}/>
 
       {/* Main content area, Outlet element is needed to display the rendered child pages received from the routes */}
       <main id="main-content" className="flex-1 h-full min-w-0">

@@ -14,6 +14,7 @@
 }
 
 @theme {
+    --color-raven-gray: #231F20;
     --color-sidebar: #171720;
     --color-sidebarfg: #8e8eab;
     --color-option: #20202f;
