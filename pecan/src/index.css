@@ -15,6 +15,7 @@
 
 @theme {
     --color-raven-gray: #231F20;
+    --color-raven-light-gray: #827A7B;
     --color-sidebar: #171720;
     --color-sidebarfg: #8e8eab;
     --color-option: #20202f;
@@ -27,7 +28,7 @@
     --color-banner-button: #3d3d4f;
     --color-banner-button-hover: #4e4e66;
 
-    --font-heading: "ZipSonik", sans-serif;
+    --font-heading: "Bank Gothic", sans-serif;
     --font-footer: "Days One", sans-serif;
 }
 

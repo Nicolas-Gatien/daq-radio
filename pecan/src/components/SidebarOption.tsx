@@ -13,11 +13,11 @@ function SidebarOption({text, path}: Readonly<InputProps>) {
             : "bg-option hover:bg-white/10 transition-colors duration-450"
           }`
         }
-  */ 
+  */  
 
   return (
-      <NavLink className={"hello"} to={path}>
-        <span className="">{text}</span>
+      <NavLink className="!no-underline" to={path}>
+        <span className="font-heading text-[20px] text-clip text-nowrap font-bold text-raven-light-gray hover:text-white ">{text}</span>
       </NavLink>
   );
 }
